@@ -1,0 +1,26 @@
+# ETAPE 4 - Configuration STATIQUE des routes.
+# Lancer avec :  --spring.profiles.active=static
+# (la découverte dynamique est alors désactivée et Eureka n'est pas utilisé)
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+      routes:
+        - id: r1
+          uri: http://localhost:8081
+          predicates:
+            - Path=/customers/**
+        - id: r2
+          uri: http://localhost:8082
+          predicates:
+            - Path=/products/**
+        - id: r3
+          uri: http://localhost:8083
+          predicates:
+            - Path=/invoices/**
+
+eureka:
+  client:
+    enabled: false
