@@ -41,8 +41,3 @@ Chaque service : `mvn spring-boot:run` (ou le bouton Run d'IntelliJ sur la class
 Par défaut il lit `config-service/src/main/resources/config-repo` (mode native).
 Pour utiliser un dépôt GitHub comme dans le cours, voir les lignes commentées dans son `application.properties`.
 Les services clients utilisent `spring.config.import=optional:configserver:...` : ils démarrent même sans config-service.
-
-## Remarques
-- Bases H2 en mémoire : les données de démo sont recréées à chaque démarrage.
-- Les 6 services Spring n'ont pas pu être compilés dans l'environnement où ils ont été générés
-  (Maven Central inaccessible). Si `mvn` signale une erreur, envoyer le message tel quel.
