@@ -1,5 +1,7 @@
 # Micro-services App — Factures / Clients / Produits
 
+Activité pratique N°2 — EMSI EDSIM-G2 — Haddouali Yassine
+
 Architecture micro-services (Spring Boot 3.3.5, Spring Cloud 2023.0.3, Java 17) + client Angular.
 
 | Service | Port | Rôle |
